@@ -1,7 +1,7 @@
 # sentiment-signal-nasdaq
 ## Sentiment Signal: Financial News–Driven NASDAQ Forecast
 
-This project investigates how shifts in financial news sentiment sourced from CNBC, Reuters, and The Guardian — align with movements in the NASDAQ index. Using NLP tools, GPT-2–based augmentation, and time-series analysis, we demonstrate how media tone can both reflect and forecast market behavior.
+This project investigates how shifts in financial news sentiment sourced from CNBC, Reuters, and The Guardian align with movements in the NASDAQ index. Using NLP tools, GPT-2–based augmentation, and time-series analysis, we demonstrate how media tone can both reflect and forecast market behavior.
 [View full report (PDF)](reports/SentimentSignal_Report.pdf)
 
 ---
