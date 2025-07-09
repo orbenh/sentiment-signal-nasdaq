@@ -60,7 +60,7 @@ This project processes a total of **142,756 records** across all stages:
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```bash
 notebooks/
