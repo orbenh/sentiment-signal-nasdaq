@@ -1,64 +1,77 @@
 
-# Sentiment Signal: Financial News–Driven NASDAQ Forecast  
-**By Or Ben Haim**  
-_Last updated: July 2025_
 
-## Project Overview
+## **Sentiment Signal: Financial News–Driven NASDAQ Forecast**
 
-This project investigates whether financial news sentiment can help forecast short-term movements in the NASDAQ index. By collecting headlines from CNBC, Reuters, and The Guardian, and applying pre-trained NLP models to score sentiment, the goal was to evaluate whether trends in news tone reflect or even anticipate market behavior.
+###  [ View Full Report (PDF)](./Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.pdf)
 
-Two forecasting models were implemented:
-- A **Linear Regression** using sentiment as the sole explanatory variable
-- A more advanced **SARIMAX** model that incorporates both past NASDAQ values and external sentiment as exogenous input
-
-The models were evaluated based on their ability to predict NASDAQ movements from **December 2017 to July 2020**, and then forecasted the index for **August–October 2020**, using bootstrapped confidence intervals to express uncertainty.
-
-
-[----->>>> View Full Report (PDF)](./reports/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.pdf)
-
+###  [ Open Jupyter Notebook](./Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.ipynb)
 
 ---
 
-## Repository Contents
+###  Project Overview
 
-| File | Description |
-|------|-------------|
-| `Sentiment Signal Financial News Driven NASDAQ Forecast Project By Or Ben Haim.ipynb` | Main Jupyter notebook with full code, analysis, modeling, and visualizations |
-| `Sentiment Signal Financial News Driven NASDAQ Forecast Project By Or Ben Haim.pdf` | Clean PDF version of the report (suitable for sharing or reviewing offline) |
-| `non_synthetic_with_nasdaq_final.csv` | Preprocessed dataset of monthly sentiment scores and corresponding NASDAQ index values |
+This project investigates whether shifts in the tone of financial news correspond with changes in the NASDAQ index. By aggregating monthly sentiment scores from real-world headlines (CNBC, Reuters, and The Guardian), and aligning them with historical NASDAQ averages, the project explores how media sentiment relates to market behavior.
+
+Sentiment analysis was performed using pretrained Hugging Face models (including GPT-2 and BERT variants). The resulting sentiment scores were aggregated monthly and used to build predictive models for the NASDAQ.
 
 ---
 
-## Key Results
+###  Models Used
 
-- **SARIMAX outperformed** the linear model across all metrics:  
-  - RMSE dropped from ~819 to ~433  
-  - R² increased from 0.09 to 0.74  
-  - The Paired T-Test showed statistically significant improvement (p = 0.0060)
-- The model correctly identified **historical market shifts** corresponding to changes in news sentiment
-- Forecasts included **confidence intervals** based on 1,000 bootstrap resamples
+* **Linear Regression**: A basic benchmark model that establishes a direct relationship between sentiment and index movement.
+* **SARIMAX**: A more advanced time-series model that captures both temporal momentum and external sentiment signals.
 
 ---
 
-## Tools & Technologies
+### 📈 Forecast Results
 
-- `transformers` (Hugging Face) – for sentiment scoring using BERT/GPT models  
-- `yfinance` – for fetching historical NASDAQ data  
-- `pandas`, `numpy`, `matplotlib`, `scikit-learn`, `statsmodels` – for data analysis, modeling, and visualization
+Two models were compared using historical data from December 2017 through July 2020:
 
----
+| Metric | Linear Regression | SARIMAX |
+| ------ | ----------------- | ------- |
+| RMSE   | 818.80            | 432.77  |
+| MAE    | 621.44            | 339.86  |
+| R²     | 0.092             | 0.741   |
 
-## Reflections & Limitations
-
-- Lightweight models (e.g., GPT‑2) were used for text augmentation and sentiment scoring. Using more advanced, domain-specific models like **FinBERT** or **GPT‑4** may yield more accurate sentiment extraction.
-- The forecasting relied only on sentiment scores. Incorporating **macroeconomic indicators** (e.g., interest rates, inflation, VIX) could enhance performance.
-- Despite limitations, this project serves as a successful **proof of concept** that shows sentiment can carry explanatory power when modeled properly.
+A **paired t-test** on prediction errors confirmed SARIMAX's statistical superiority (*p = 0.006*).
 
 ---
 
-## How to Run
+###  Key Insights
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+* **SARIMAX significantly outperformed** linear regression by incorporating time dynamics and reacting more sensitively to sentiment shifts.
+* The model successfully **captured real historical market turning points**, demonstrating the potential explanatory power of sentiment signals.
+* **Limitations** included the use of non-finetuned NLP models (GPT-2, base BERT), and **lack of macroeconomic variables** like interest rates, inflation, or earnings.
+* Future improvements could include **FinBERT**, **GPT-4**, or models fine-tuned on financial corpora, as well as incorporation of broader economic indicators.
+
+---
+
+###  Repository Contents
+
+```bash
+├── Sentiment Signal Financial News Driven NASDAQ Forecast Project By Or Ben Haim.ipynb
+├── Sentiment Signal Financial News Driven NASDAQ Forecast Project By Or Ben Haim.pdf
+├── requirements.txt
+├── README.md  ← You are here
+└── data/
+    └── non_synthetic_with_nasdaq_final.csv
+```
+
+---
+
+###  Requirements
+
+Install all dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+###  Credits
+
+Project by **Or Ben Haim**
+Sentiment scoring powered by Hugging Face Transformers
+Market data from [Yahoo Finance](https://finance.yahoo.com/) via `yfinance`
+News data sourced from [Kaggle](https://www.kaggle.com/datasets/notlucasp/financial-news-headlines)
