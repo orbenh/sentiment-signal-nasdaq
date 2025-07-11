@@ -2,9 +2,8 @@
 
 ##  **Sentiment Signal: Financial News–Driven NASDAQ Forecast**
 
-###  [ View Full Report (PDF)](./Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.pdf)
-
-###  [ Open Jupyter Notebook](./Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.ipynb)
+[ View Full Notebook](notebooks/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.ipynb)
+[ View Full Report (PDF)](reports/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.pdf)
 
 ---
 
