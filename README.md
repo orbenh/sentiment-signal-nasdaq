@@ -36,7 +36,7 @@ The models were evaluated based on their ability to predict NASDAQ movements fro
 
 ---
 
-## 🤖 Tools & Technologies
+## Tools & Technologies
 
 - `transformers` (Hugging Face) – for sentiment scoring using BERT/GPT models  
 - `yfinance` – for fetching historical NASDAQ data  
