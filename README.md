@@ -12,7 +12,7 @@
 
 This project investigates whether shifts in the tone of financial news correspond with changes in the NASDAQ index. By aggregating monthly sentiment scores from real-world headlines (CNBC, Reuters, and The Guardian), and aligning them with historical NASDAQ averages, the project explores how media sentiment relates to market behavior.
 
-Sentiment analysis was performed using pre-trained models from Hugging Face – combining **GPT-2** (for generating missing text summaries) and **BERT-based models** (for scoring sentiment on a 1–10 scale). The resulting sentiment scores were aggregated monthly and used to build predictive models for the NASDAQ.
+Sentiment analysis was performed using pre trained models from Hugging Face – combining **GPT-2** (for generating missing text summaries) and **BERT-based models** (for scoring sentiment on a 2–10 scale). The resulting sentiment scores were aggregated monthly and used to build predictive models for the NASDAQ.
 
 ---
 
