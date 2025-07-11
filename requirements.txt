@@ -2,8 +2,9 @@ pandas
 numpy
 matplotlib
 scikit-learn
-statsmodels
 yfinance
 transformers
 torch
+statsmodels
+seaborn
 jupyter
