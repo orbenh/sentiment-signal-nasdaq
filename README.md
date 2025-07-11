@@ -14,7 +14,8 @@ Two forecasting models were implemented:
 The models were evaluated based on their ability to predict NASDAQ movements from **December 2017 to July 2020**, and then forecasted the index for **August–October 2020**, using bootstrapped confidence intervals to express uncertainty.
 
 
-[View Full Report (PDF)](./Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.pdf)
+[----->>>> View Full Report (PDF)](./reports/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.pdf)
+
 
 ---
 
