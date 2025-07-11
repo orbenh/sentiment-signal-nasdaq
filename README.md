@@ -12,7 +12,7 @@
 
 This project investigates whether shifts in the tone of financial news correspond with changes in the NASDAQ index. By aggregating monthly sentiment scores from real-world headlines (CNBC, Reuters, and The Guardian), and aligning them with historical NASDAQ averages, the project explores how media sentiment relates to market behavior.
 
-Sentiment analysis was performed using pre trained models from Hugging Face – combining **GPT-2** (for generating missing text summaries) and **BERT-based models** (for scoring sentiment on a 2–10 scale). The resulting sentiment scores were aggregated monthly and used to build predictive models for the NASDAQ.
+Sentiment analysis was performed using pre trained models from Hugging Face  combining **GPT-2** (for generating missing text summaries) and **BERT-based models** (for scoring sentiment on a 2–10 scale). The resulting sentiment scores were aggregated monthly and used to build predictive models for the NASDAQ.
 
 ---
 
@@ -20,15 +20,15 @@ Sentiment analysis was performed using pre trained models from Hugging Face – 
 
 ####  NLP Models (Hugging Face)
 
-* **GPT‑2** – used to generate brief textual descriptions for headlines missing context.
-* **BERT (base-uncased)** – applied to headline + description pairs to classify sentiment scores on a 1–10 scale.
+* **GPT‑2**  used to generate brief textual descriptions for headlines missing context.
+* **BERT (base-uncased)**  applied to headline + description pairs to classify sentiment scores on a 1–10 scale.
 
 > Note: These models were not fine-tuned on financial texts. Accuracy may improve with FinBERT or domain-specific large language models.
 
 ####  Predictive Models
 
 * **Linear Regression**: A baseline model mapping sentiment scores to NASDAQ averages.
-* **SARIMAX**: A time-series model that incorporates both past NASDAQ trends and external sentiment signals.
+* **SARIMAX**: A time series model that incorporates both past NASDAQ trends and external sentiment signals.
 
 ---
 
