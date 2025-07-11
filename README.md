@@ -11,6 +11,11 @@ To complete this analysis, we:
 We then trained two forecasting models:
 -  A simple **linear regression**
 -  A **SARIMAX** time series model (including sentiment as an external regressor)
+  
+## View the Project
+
+-  Notebook: [`notebooks/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim%20(1).ipynb`](notebooks/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim%20(1).ipynb)
+- Report (PDF): [`reports/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.pdf`](reports/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.pdf)
 
 ---
 
@@ -22,13 +27,6 @@ We then trained two forecasting models:
 | `notebooks/`    | Full Jupyter Notebook (analysis + modeling) |
 | `reports/`      | Final report (PDF export of the notebook) |
 | `requirements.txt` | All Python dependencies used |
-
----
-
-## 🔗 View the Project
-
--  Notebook: [`notebooks/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim%20(1).ipynb`](notebooks/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim%20(1).ipynb)
-- Report (PDF): [`reports/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.pdf`](reports/Sentiment%20Signal%20Financial%20News%20Driven%20NASDAQ%20Forecast%20Project%20By%20Or%20Ben%20Haim.pdf)
 
 ---
 
